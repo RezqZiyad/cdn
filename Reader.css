@@ -1,0 +1,100 @@
+@font-face {
+  font-family: z;
+  src: url("https://cdn.jsdelivr.net/gh/rizkzeyad/cdn@master/Nassim.ttf");
+}
+html {
+  font-size: 36px;
+}
+body {
+  margin: 0;
+  font-family: z;
+  direction: rtl;
+  background: #fffdf8;
+  line-height: 2.1;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+::-webkit-scrollbar:vertical {
+  background: #fff;
+}
+#cont {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #4a4440;
+  padding: 0.7rem;
+}
+#cont br {
+  line-height: 1.75rem;
+}
+.indenter {
+  display: inline-block;
+  width: 1.2rem;
+}
+.basmalah {
+  margin-bottom: 1rem;
+}
+.basmalah {
+  text-align: center;
+}
+.bayt {
+  margin: 0.25rem auto;
+  max-width: 787px;
+}
+.bayt-ajiz,
+.bayt-sadr {
+  text-align: justify;
+  width: 45.5%;
+  line-height: 0.7rem;
+  display: inline-block;
+}
+.bayt-ajiz:after,
+.bayt-sadr:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.bayt-sep {
+  color: #f1805c;
+  font-size: 0.9rem;
+  vertical-align: top;
+  padding: 0 8px;
+  color: #e64a19;
+  width: 4.6%;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 21px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 19px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media (max-width: 500px) {
+  .bayt-ajiz,
+  .bayt-sadr {
+    width: 65%;
+  }
+  .bayt-sep {
+    display: none;
+  }
+  .bayt-ajiz {
+    margin-right: 35%;
+    position: relative;
+    bottom: 4px;
+  }
+}
